@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>Astronomy Picture of the Day!</h1>
+        Date:<input type="date" id="date-input" value="2019-01-01" min="1995-06-16" >
+        <button onclick=download()>Download</button>
+    <script>
+        function download() {
+         var date_input = document.getElementById("date-input").value;
+         console.log(date_input);
+         window.location.replace('http://127.0.0.1/apod/'+date_input);
+        }
+    </script>
+   </body>
+   
+</html>
